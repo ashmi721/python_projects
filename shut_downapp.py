@@ -21,8 +21,6 @@ def restart_time():
     os.system("shutdown /r /t 20")
 
 # Function to log out of the computer
-
-
 def logout():
     os.system("shutdown /l")
 

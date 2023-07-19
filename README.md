@@ -8,4 +8,5 @@
  iii> Enter the name of the product, quantity and price
  iv>  Than it provide the bill of your shopping.
 
- 4. typing_speed.py file has a basic self practice typing speed & error calculator.
+ 4. typing_speed.py file has a basic self practice typing speed & error calculaton .
+ 5. calculator.py file has a basic calculator in this clc make to used GUI trikinter module of the python 
