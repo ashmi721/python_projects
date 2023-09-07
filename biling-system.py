@@ -1,4 +1,4 @@
-#1. wap to create a biling system (product,price,aulity,total,all_total)
+# wap to create a biling system (product,price,aulity,total,all_total)
 def clc_billing_system():
     name = input("Enter your name: ")
     print(f"Welcome Mr/Mrs {name}")
