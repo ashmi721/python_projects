@@ -30,6 +30,5 @@ for secret_word in secret_words:
     else:
       rw = secreat_word[3:-4]
       last_letter = secret_word[-1]
-      normal_word = last_letter + rw
       normal_words.append(normal_word)
 print("Normal code:",' '.join(normal_words))
