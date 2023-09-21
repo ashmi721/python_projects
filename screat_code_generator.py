@@ -22,7 +22,6 @@ print("Secret code:",' '.join(secreat_word))
 secret_words = str(secreat_word).split(",")
 
 normal_words = []
-
 for secret_word in secret_words:
     if len(secret_word) >= 3:
         normal_word = secret_word[::-1]
