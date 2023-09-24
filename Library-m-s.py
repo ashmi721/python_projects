@@ -3,4 +3,11 @@
  books after the program is stopped!
 '''
 class library:
-    
+    books = []
+
+def __init__(self):
+        self.no_of_books = len(self.books)
+
+def print_all_books(self):
+        for book in self.books:
+            print(book)
