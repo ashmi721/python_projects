@@ -11,16 +11,16 @@ class library:
         self.books.append(book)
         self.no_of_books = len(self.books)
 
-    def show_info(self):
-        print(f"Number of books in the library are {self.no_of_books} :")
-        for book in self.books:
-            print(book)
 
     def remove_book(self,book):
         if book in self.books:
             self.books.remove(book) 
             self.no_of_books = len(self.books)
-             
+
+    def show_info(self):
+        print(f"Number of books in the library are {self.no_of_books} :")
+        for book in self.books:
+            print(book)
 
 l1 = library()
 l1.add_book("Harry Potter")
