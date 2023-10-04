@@ -3,11 +3,19 @@
  books after the program is stopped!
 '''
 class library:
-    books = []
-
-def __init__(self):
+    def __init__(self):
+        self.no_of_books = 0
+        self.books=[]
+    
+    def add_book(self,book):
+        self.books.append(book)
         self.no_of_books = len(self.books)
 
-def print_all_books(self):
+    def show_info(self):
+        print(f"Number of books in the library are {self.no_of_books} :")
         for book in self.books:
             print(book)
+
+l1 = library()
+l1.add_book("Harry Potter")
+l1.show_info()
