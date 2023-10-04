@@ -9,25 +9,26 @@ class Library:
 
     def add_book(self, book, category): # create add book funtion with two parameter
         self.books[book] = category  # add book with category in dectinary of books
-        self.no_of_books += 1
+        self.no_of_books += 1 # increment after the add the each book
 
-    def remove_book(self, book):
-        if book in self.books:
-            del self.books[book]
-            self.no_of_books -= 1
+    def remove_book(self, book): # create remove book funtion with one parameter
+        if book in self.books: # cheek if remove book are available
+            del self.books[book] # del required book
+            self.no_of_books -= 1 # decrement after the remove the book
 
-    def print_books(self):
-        print("Available books in the library are:",self.no_of_books)
+    def print_books(self): 
+        print("Available books in the library are:",self.no_of_books) # display the no of books with name
         for book, category in self.books.items():
             print(f"{book} - {category}")
 
     def get_no_of_books(self):
-        return self.no_of_books
+        return self.no_of_books # it return the no of books
 
-l1 = Library()
-l1.add_book("Harry Potter", "Fantasy")
+l1 = Library() # create an instance of the class
+l1.add_book("Harry Potter", "Fantasy") # call the funtion with argument
 print(f"Number of Initial books: {l1.get_no_of_books()}")
 
+# enter the user requrement such as add, remove and quit
 while True:
     print("Enter a book name (Enter 'a' to add, 'q' to quit, 'r' to remove get the total info):")
     choice = input()
@@ -44,4 +45,5 @@ while True:
         book_to_remove = input()
         l1.remove_book(book_to_remove)
 
+# diaplay the all books
 l1.print_books()
