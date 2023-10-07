@@ -55,8 +55,7 @@ def main():
         "question": "What does IDE stand for in programming?",
         "options": ["Internet Data Exchange", "Interpreted Design Entity", "Inherited Development Element","Integrated Development Environment"],
         "answer": "4" 
-    }
-           
+    },    
     ]
 
     num_random_questions = 9  # Set the number of random questions you want to display
