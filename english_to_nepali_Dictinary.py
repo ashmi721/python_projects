@@ -29,7 +29,7 @@ label = tk.Label(root,text='Enter an English word:')
 label.pack()
 
 # Create an entry widget for user input'
-entry = tk.Entry(root,width=29)
+entry = tk.Entry(root,width=49)
 entry.pack()
 
 # Create a button to trigger translation
